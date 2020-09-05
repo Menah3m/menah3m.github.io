@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hanabi|i</title>
+    <link>https://menah3m.github.io/posts/</link>
+    <description>Recent content in Posts on Hanabi|i</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 16:04:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://menah3m.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RHEL7 DNS Setting</title>
+      <link>https://menah3m.github.io/2020/rhel7-dns-setting/</link>
+      <pubDate>Sat, 05 Sep 2020 16:04:18 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/2020/rhel7-dns-setting/</guid>
+      <description> RHEL7 中使用NetworkManager进行网络管理 配置文件： ①/etc/sysconfig/network-scripts/ifcfg-xxx （xxx为NIC名） ②/etc/resolv.conf  修改DNS方法： 1.直接修改配置文件
+优先度：①&amp;gt;②
+可以理解成源配置文件是①
+只修改②的话，只是临时有效，重启服务或者主机后会恢复原来的设置
+每次重启NetworkManager时，会根据配置文件①中的设置进行网络设置，②中的内容也会被①中 的设置覆盖
+2.nmcli命令
+nmcli connection #得到connection NAME nmcli con modi [NAME] ipv4.dns [address] nmcli con up [NAME] </description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://menah3m.github.io/2020/test/</link>
+      <pubDate>Wed, 02 Sep 2020 20:54:19 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/2020/test/</guid>
+      <description>This is a test file for deploy scripts. </description>
+    </item>
+    
+    <item>
+      <title>Ansible安装和简单使用</title>
+      <link>https://menah3m.github.io/2020/ansible%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 31 Aug 2020 16:14:16 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/2020/ansible%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</guid>
+      <description>测试环境
+操作系统：CentOS 7
+Ansible客户端：centos-master（192.168.13.100）
+节点：centos-slave1（192.168.13.101） centos-slave2（192.168.13.102）
+  安装步骤
+#设置EPEL仓库 [root@centos-master ~]# wget &amp;lt;http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm&amp;gt; [root@centos-master ~]# rpm -ivh epel-release-latest-7.noarch.rpm #检查EPEL仓库是否存在 [root@centos-master ~]# yum repolist -v #安装Ansible [root@centos-master ~]# yum -y update [root@centos-master ~]# yum -y install ansible #检查Ansible版本 [root@centos-master ~]# ansible --version #设置SSH密钥 [root@centos-master ~]# ssh-keygen [root@centos-master ~]# ssh root@192.168.13.101 [root@centos-master ~]# ssh root@192.168.13.102 #定义节点清单 [root@centos-master ~]# vi /etc/ansible/hosts #添加以下内容 [slavenodes] 192.168.13.101 192.168.13.102   简单使用</description>
+    </item>
+    
+    <item>
+      <title>Tcpdump Usage</title>
+      <link>https://menah3m.github.io/2020/tcpdump-usage/</link>
+      <pubDate>Mon, 31 Aug 2020 12:34:16 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/2020/tcpdump-usage/</guid>
+      <description>tcpdump 是一款基于libpcap库的网络抓包工具  输入 1.基本参数 [root@centos-master ~]# tcpdump -i ens33 -nn -v -s0 port 80  -i: 监听的网络接口 -nn: 单个n表示直接显示IP，不显示域名。 两个n表示直接显示IP，不显示域名和端口 -s0: -s后面加数字， 数字表示想要截取的报文字节数，0表示截取全部报文。如果不加-s参数，默认只截取96字节。 -v:表示信息的详细程度，可以用一个v，两个v，三个v表示，v越多信息越详细。 port 80:监听端口选项 -p: 不让网络接口进入混杂模式。混杂模式会将该接口收到的所有数据截取下来，即使目的地址不是本机。非混杂模式则只接收该接口下目的地址是本机的数据包。 -e:显示数据链路层信息，包括源和目的MAC地址，以及VlAN tag信息。默认情况下是不显示的。  2.显示ASCII字符串 -A表示使用 ASCII字符串打印报文的内容
+[root@centos-master ~]# tcpdump -i ens33 -nn -v -A 3.抓取特定协议的数据 可以加入协议名称来过滤特定协议的流量。参数可以是协议名 udp或者是协议号
+protocol 协议号
+[root@centos-master ~]# tcpdump -i ens33 icmp tcpdump: verbose output suppressed, use -v or -vv for full protocol decode listening on ens33, link-type EN10MB (Ethernet), capture size 262144 bytes 15:34:13.</description>
+    </item>
+    
+  </channel>
+</rss>

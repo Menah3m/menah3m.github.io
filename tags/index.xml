@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Hanabi|i</title>
+    <link>https://menah3m.github.io/tags/</link>
+    <description>Recent content in Tags on Hanabi|i</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 Sep 2020 16:04:18 +0900</lastBuildDate>
+    
+	<atom:link href="https://menah3m.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>network</title>
+      <link>https://menah3m.github.io/tags/network/</link>
+      <pubDate>Sat, 05 Sep 2020 16:04:18 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RHEL</title>
+      <link>https://menah3m.github.io/tags/rhel/</link>
+      <pubDate>Sat, 05 Sep 2020 16:04:18 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/tags/rhel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test</title>
+      <link>https://menah3m.github.io/tags/test/</link>
+      <pubDate>Wed, 02 Sep 2020 20:54:19 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>https://menah3m.github.io/tags/ansible/</link>
+      <pubDate>Mon, 31 Aug 2020 16:14:16 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/tags/ansible/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CentOS</title>
+      <link>https://menah3m.github.io/tags/centos/</link>
+      <pubDate>Mon, 31 Aug 2020 16:14:16 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

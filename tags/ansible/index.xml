@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible on Hanabi|i</title>
+    <link>https://menah3m.github.io/tags/ansible/</link>
+    <description>Recent content in Ansible on Hanabi|i</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 16:14:16 +0900</lastBuildDate>
+    
+	<atom:link href="https://menah3m.github.io/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ansible安装和简单使用</title>
+      <link>https://menah3m.github.io/2020/ansible%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Mon, 31 Aug 2020 16:14:16 +0900</pubDate>
+      
+      <guid>https://menah3m.github.io/2020/ansible%E5%AE%89%E8%A3%85%E5%92%8C%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</guid>
+      <description>测试环境
+操作系统：CentOS 7
+Ansible客户端：centos-master（192.168.13.100）
+节点：centos-slave1（192.168.13.101） centos-slave2（192.168.13.102）
+  安装步骤
+#设置EPEL仓库 [root@centos-master ~]# wget &amp;lt;http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm&amp;gt; [root@centos-master ~]# rpm -ivh epel-release-latest-7.noarch.rpm #检查EPEL仓库是否存在 [root@centos-master ~]# yum repolist -v #安装Ansible [root@centos-master ~]# yum -y update [root@centos-master ~]# yum -y install ansible #检查Ansible版本 [root@centos-master ~]# ansible --version #设置SSH密钥 [root@centos-master ~]# ssh-keygen [root@centos-master ~]# ssh root@192.168.13.101 [root@centos-master ~]# ssh root@192.168.13.102 #定义节点清单 [root@centos-master ~]# vi /etc/ansible/hosts #添加以下内容 [slavenodes] 192.168.13.101 192.168.13.102   简单使用</description>
+    </item>
+    
+  </channel>
+</rss>
